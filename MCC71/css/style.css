@@ -1,0 +1,146 @@
+#modalDetailPoke::-webkit-scrollbar{
+    width: 5px;
+}
+
+.table-wrapper{
+    max-height: 250px;
+    width: 200px;
+    overflow: auto;
+    display:inline-block;
+}
+
+#types{
+    margin-bottom: 10px;
+}
+
+.statNames{
+    margin-bottom: 0;
+    text-align: left;
+    text-transform: capitalize;
+}
+
+.hp{
+    background-color: #FF0000 !important;
+    text-align: left;
+    padding-left: 5px;
+}
+
+.attack{
+    background-color: #F08030 !important;
+    text-align: left;
+    padding-left: 5px;
+}
+
+.defense{
+    background-color: #F8D030 !important;
+    text-align: left;
+    padding-left: 5px;
+}
+
+.special-attack{
+    background-color: #6890F0 !important;
+    text-align: left;
+    padding-left: 5px;
+}
+
+.special-defense{
+    background-color: #78C850 !important;
+    text-align: left;
+    padding-left: 5px;
+}
+
+.speed{
+    background-color: #F85888 !important;
+    text-align: left;
+    padding-left: 5px;
+}
+
+.unknown{
+    color: #FFF;
+    background-color: #68A090;
+}
+
+.bug{
+    color: #FFF;
+    background-color: #A8B820;
+}
+
+.dark{
+    color: #FFF;
+    background-color: #705848;
+}
+
+.dragon{
+    color: #FFF;
+    background-color: #7038F8;
+}
+
+.electric{
+    color: #FFF;
+    background-color: #F8D030;
+}
+
+.fairy{
+    color: #FFF;
+    background-color: #EE99AC;
+}
+
+.fighting{
+    color: #FFF;
+    background-color: #C03028;
+}
+
+.fire{
+    color: #FFF;
+    background-color: #F08030;
+}
+
+.flying{
+    color: #FFF;
+    background-color: #A890F0;
+}
+
+.ghost{
+    color: #FFF;
+    background-color: #705898;
+}
+
+.grass{
+    color: #FFF;
+    background-color: #78C850;
+}
+
+.ground{
+    color: #FFF;
+    background-color: #E0C068;
+}
+
+.ice{
+    color: #FFF;
+    background-color: #98D8D8;
+}
+
+.normal{
+    color: #FFF;
+    background-color: #A8A878;
+}
+
+.poison{
+    color: #FFF;
+    background-color: #A040A0;
+}
+
+.rock{
+    color: #FFF;
+    background-color: #B8A038;
+}
+
+.steel{
+    color: #FFF;
+    background-color: #B8B8D0;
+}
+
+.water{
+    color: #FFF;
+    background-color: #6890F0;
+}
