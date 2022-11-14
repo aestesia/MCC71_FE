@@ -1,9 +1,5 @@
-#modalDetailPoke::-webkit-scrollbar{
-    width: 5px;
-}
-
 .table-wrapper{
-    max-height: 250px;
+    max-height: 265px;
     width: 200px;
     overflow: auto;
     display:inline-block;
