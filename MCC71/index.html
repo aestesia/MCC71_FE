@@ -6,13 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TUGAS MCC 71</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/dt/dt-1.13.1/datatables.min.css"/>
     <link rel="stylesheet" href="css/style.css"/>
 </head>
 <body>
     <h1 id="judul">POKEMON LIST</h1>
 
-    <table class="table table-striped table-hover">
-        <thead style="position: sticky;top: 0" class="table-dark">
+    <table id="tablePokemon" class="table table-striped table-hover" style="width: 100%;">
+        <thead style="position: sticky;top: 40px" class="table-dark">
             <tr>
                 <th>No</th>
                 <th>Nama</th>
@@ -43,7 +44,13 @@
                     <div class="row justify-content-md-center" id="types">
                     
                     </div>
-                    <div class="row justify-content-md-center">
+                    <div class="row ">
+                        <h5>Abilities</h5>
+                    </div>
+                    <div class="row justify-content-md-center" id="abilities">
+                        
+                    </div>
+                    <div class="row">
                         <div class="col">
                             <div class="table-wrapper">
                                 <table class="table table-striped">
@@ -61,7 +68,7 @@
                         <div class="col" id="stats">
                             
                         </div>
-                    </div>
+                    </div>                    
                 </div>
             </div>
         </div>
@@ -70,6 +77,8 @@
 
     <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/v/dt/dt-1.13.1/datatables.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
     <script src="index.js"></script>
     
 </body>

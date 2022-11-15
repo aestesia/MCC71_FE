@@ -1,3 +1,18 @@
+.topnav{
+    overflow: hidden;
+    background-color: gray;
+    
+}
+
+.topnav input[type=text] {
+    padding-top: 5px;
+    border: none;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 16px;
+    font-size: 17px;
+  }
+
 .table-wrapper{
     max-height: 265px;
     width: 200px;
@@ -5,7 +20,15 @@
     display:inline-block;
 }
 
+.img{
+    max-height: 200px;
+}
+
 #types{
+    margin-bottom: 10px;
+}
+
+#abilities{
     margin-bottom: 10px;
 }
 

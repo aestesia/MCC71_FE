@@ -28,7 +28,7 @@ function detailPoke(url){
             $("#name").html(tempName);
 
         let tempModal=
-            `<img src="${res.sprites.other['official-artwork'].front_default}" class="img-fluid rounded-pill border border-dark">`;
+            `<img src="${res.sprites.other['official-artwork'].front_default}" class="img rounded-pill border border-dark">`;
             $("#picture").html(tempModal);
         
         let tempTypes="";
@@ -40,11 +40,20 @@ function detailPoke(url){
         })
         $("#types").html(tempTypes);
 
+        let tempAbilities="";
+        $.each(res.abilities,function(key,val){
+            tempAbilities += 
+                `<div class="col-md-auto">                    
+                    <span class="badge bg-secondary text-capitalize">${val.ability.name.replace("-"," ")}</span>
+                </div>`;        
+        })
+        $("#abilities").html(tempAbilities);
+
         let tempMoves="";
         $.each(res.moves,function(key,val){
             tempMoves += 
                 `<tr>
-                    <td class="text-capitalize">${val.move.name}</td>
+                    <td class="text-capitalize">${val.move.name.replace("-"," ")}</td>
                 </tr>`;        
         })
         $("#tableMove").html(tempMoves);
@@ -59,8 +68,18 @@ function detailPoke(url){
                 </div>`;        
         })
         $("#stats").html(tempStats);
-
-
     });
 }
 
+function detailAbility(url){
+    // $.ajax({
+    //     url: url
+    // }).done((res) => {
+
+    // })
+    return 0;
+}
+
+$(document).ready( function () {
+    $('#tablePokemon').DataTable();
+} );
