@@ -71,15 +71,6 @@ function detailPoke(url){
     });
 }
 
-function detailAbility(url){
-    // $.ajax({
-    //     url: url
-    // }).done((res) => {
-
-    // })
-    return 0;
-}
-
 $(document).ready( function () {
     $('#tablePokemon').DataTable();
 } );
