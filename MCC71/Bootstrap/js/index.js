@@ -12,7 +12,7 @@ $.ajax({
                 <td><button class="btn btn-primary" onclick="detailPoke('${val.url}')" data-bs-toggle="modal" data-bs-target="#modalDetailPoke">Detail</button></td>
             </tr>`;        
     })
-    $("#tablePoke").html(temp);    
+    $("#tablePokeAPI").html(temp);    
     
 }).fail((err)=>{
     console.log(err);
@@ -72,5 +72,7 @@ function detailPoke(url){
 }
 
 $(document).ready( function () {
-    $('#tablePokemon').DataTable();
+    $('#tablePokemon').DataTable({
+        pageLength: 20
+    });
 } );
